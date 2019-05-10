@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 3257252238571421758}
   - component: {fileID: 3257252238571421757}
   - component: {fileID: 1508379796129857314}
-  m_Layer: 0
+  - component: {fileID: 8443320991832399740}
+  - component: {fileID: 3157264614276596397}
+  m_Layer: 9
   m_Name: EnemyBlack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3257252238571421756}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!212 &3257252238571421757
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -92,3 +94,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00f6ba22c0269cb46b5a827a1107918a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &8443320991832399740
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3257252238571421756}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0031610131, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.40436345
+--- !u!114 &3157264614276596397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3257252238571421756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15b9fb8d431d8de49a0ea0a3c1f97c29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 200
+  ShotCounter: 0
+  MinTimeShot: 0.2
+  MaxTimeShot: 3
+  LaserPrefab: {fileID: 8448583381124255783, guid: 52caa452b2a812149a413cc8be572770,
+    type: 3}
+  ProjectileSpeed: 10

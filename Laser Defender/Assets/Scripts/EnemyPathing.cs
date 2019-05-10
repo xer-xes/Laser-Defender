@@ -39,8 +39,9 @@ public class EnemyPathing : MonoBehaviour
         }
         else
         {
-            wayPointIndex = 0;
-            transform.position = waypoints[wayPointIndex].transform.position;
+            //wayPointIndex = 0;
+            //transform.position = waypoints[wayPointIndex].transform.position;
+            Destroy(gameObject);
         }
     }
 }

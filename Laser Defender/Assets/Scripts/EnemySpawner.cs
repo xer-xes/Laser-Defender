@@ -6,10 +6,14 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] List<WaveConfig> waveConfigs = new List<WaveConfig>();
     [SerializeField] int StartingWave = 0;
+    [SerializeField] bool looping = false;
     // Start is called before the first frame update
-    void Start()
+    IEnumerator  Start()
     {
-        StartCoroutine(SpawnAllWaves());
+        do
+        {
+            yield return StartCoroutine(SpawnAllWaves());
+        } while (looping);
     }
 
     private IEnumerator SpawnAllWaves()

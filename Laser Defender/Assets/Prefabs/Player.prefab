@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 627660837}
   m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,9 +93,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cad95924ed82594d953ad4f63d6da47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 10
   offSet: 0.5
   Health: 200
+  DeathSFX: {fileID: 8300000, guid: 1350b0b7c895bbc4f8f0faf32e0328ec, type: 3}
+  DeathVolume: 0.75
+  ShootSFX: {fileID: 8300000, guid: 64918d104a9d3f049ac6e0c4b4d62d55, type: 3}
+  ShootVolume: 0.15
   ProjectileSpeed: 10
   ProjectileFiringPeriod: 0.1
   LaserPrefab: {fileID: 2257719112120674203, guid: d647c38c5bccae145afa751864c64346,
